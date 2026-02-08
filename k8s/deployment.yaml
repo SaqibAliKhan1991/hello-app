@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: hello-app:latest      # your local image
-          imagePullPolicy: Never        # <- add this line
+          image: hello-app:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
 

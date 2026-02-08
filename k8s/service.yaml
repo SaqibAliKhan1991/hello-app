@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: hello-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: hello-app
   ports:
     - port: 80
       targetPort: 3000
+      nodePort: 30080
+
