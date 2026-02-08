@@ -10,7 +10,7 @@ pipeline {
 
     stage("Push Image") {
       steps {
-        sh 'docker push YOUR_DOCKERHUB_USERNAMEsaqib321/hello-app:latest'
+        sh 'docker push saqib321/hello-app:latest'
       }
     }
 
