@@ -1,19 +1,17 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const PORT = 3000;
 
-// Serve static files
+// Serve static files (CSS, JS, images) from "public"
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Routing
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public/index.html')));
-app.get('/about', (req, res) => res.sendFile(path.join(__dirname, 'public/about.html')));
-app.get('/projects', (req, res) => res.sendFile(path.join(__dirname, 'public/projects.html')));
-app.get('/contact', (req, res) => res.sendFile(path.join(__dirname, 'public/contact.html')));
+// Serve the index.html for root
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-// Start server
-const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Portfolio website running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
 

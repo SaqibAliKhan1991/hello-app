@@ -21,3 +21,11 @@ pipeline {
     }
   }
 }
+
+stage('Deploy to Kubernetes') {
+    steps {
+        sh 'kubectl set image deployment/hello-app hello-app=hello-app:latest'
+        sh 'kubectl rollout status deployment/hello-app'
+    }
+}
+
