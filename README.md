@@ -1,6 +1,5 @@
-**Hello App**
+This project is a CV Web Application, serving as a personal portfolio built with Node.js. It features dynamic, interactive web pages that showcase professional experience, skills, education, and projects. The application is fully dockerized to ensure consistent environments across development and deployment, and it is deployed on Kubernetes (Minikube) using Deployment and Service manifests for scalability and high availability. A CI/CD pipeline with Jenkins automates the workflow from code commit to Docker image creation and Kubernetes deployment. Docker images are integrated with Docker Hub, enabling easy distribution and deployment. The web pages are responsive, and the Kubernetes deployment uses multiple replicas to ensure scalability. This project demonstrates a complete DevOps workflow, from Git version control to Docker and Kubernetes deployment, and supports WSL2 with Docker Desktop through proper environment configuration. Overall, it serves as an educational project to practice full-stack development, containerization, and modern DevOps practices.
 
-A simple Node.js web application deployed using Docker, Kubernetes (Minikube), and automated through a Jenkins CI/CD pipeline. This project demonstrates modern DevOps practices including containerization, continuous integration, and deployment automation.
 
 **Table of Contents**
 
